@@ -24,7 +24,7 @@ LIBPATH =
 
 INCLUDEPATH =
 
-GCC = gcc -g -Wall
+GCC = g++ -g -Wall
 
 all : sc fsm-sc fsm-sc-metodos fsm-mut-sc fsm-mut-dist-sc fsm-all-sc fsm-all-k-mut-sc fsm-k-ml-sc fsm-all-fsm-sc fsm-rnd-fsm-tc-rsc2 fsm-rnd-fsm-tc-rsc fsm-rnd-fsm-sc fsm-rnd-fsm-tc-rsc-FINAL fsm-gera-fsm fsm-gera-uma-fsm fsm-sc-arq fsm-is-reduced
 

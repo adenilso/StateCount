@@ -10,6 +10,8 @@
 #include <iterator>
 #include <iostream>
 #include <fstream>
+#include <algorithm>
+#include <cstring>
 //#include <stdlib.h> 
 
 #include "BigNumber.h"

@@ -7,6 +7,7 @@
 #include <iterator>
 #include <iostream>
 #include <fstream>
+#include <cstring>
 
 void yyparse(void);
 
