@@ -354,11 +354,7 @@ void FSM::imprime(vector<int> pre) {			//metodo adicionado (Lucio)
 //  for( i = pre.begin(); i != pre.end() ; i++ )
  //    cout << "seq: " *i << endl;
 
-<<<<<<< HEAD
 for(vector<int>::size_type i = 0; i < pre.size(); i++)
-=======
-for(int i = 0; i < pre.size(); i++)
->>>>>>> 27791b29ad883f73cda07dbb28b3c24ac7240903
     cout << "seq: " << pre[i] << endl;
 }
 
