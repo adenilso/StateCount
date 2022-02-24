@@ -634,14 +634,18 @@ void FSM::setup() {
     bool changed;
     do {
       changed = false;
-      for (set<int>::const_iterator itNI = notIncluded.begin(); itNI != notIncluded.end() && !changed; itNI++) {
-        for (set<int>::const_iterator itCS = coreStates.begin(); itCS != coreStates.end() && !changed; itCS++) {
+      for (set<int>::iterator itNI = notIncluded.begin(); !changed && itNI != notIncluded.end(); itNI++) {
+        for (set<int>::iterator itCS = coreStates.begin(); !changed && itCS != coreStates.end(); itCS++) {
           int removeState = *itNI;
           if (isQE(*itCS, removeState)) {
             notIncluded.erase(removeState);
             changed = true;
+	    break;
           }
         }
+	if (changed) {
+	  break;
+	}
       }
     } while (changed);
   }
